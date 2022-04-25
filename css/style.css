@@ -1,0 +1,518 @@
+
+/* section 1 */
+
+.head-warpper{
+  background-image: url('../img/vegetable-rows-pepper-grow-field-farming-agriculture_72572-4.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  position: relative;
+  height: 90vh;
+}
+
+
+
+.head-warpper::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.head-warpper > div{
+  position: relative;
+}
+.nav-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo{
+  padding: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul{
+  display: flex;
+  padding-inline-start: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.nav-bar ul li{
+  list-style: none;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+
+
+
+/* top nav */
+
+
+.top-nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: sticky;
+  z-index: 999;
+  padding: 0px 30px;
+  height: 0px;
+  overflow: hidden;
+  top: -0.5%;
+  background-color: black;
+}
+
+
+.top-nav 
+.nav-bar ul li{
+  color: white;
+}
+.top-nav 
+.nav-logo{
+  color: white;
+}
+
+.head-box{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: black;
+  padding: 0px 220px 260px 0px
+}
+
+@media(max-width:768px){
+  .head-box{
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px 0px 0px
+  }
+}
+
+.head-box h1{
+  font-size: 80px;
+
+}
+
+.head-box p{
+  font-size: 40px;
+}
+
+@media(max-width:550px){
+  .head-box h1{
+    font-size: 50px;
+  }
+  .head-box p{
+    font-size: 30px;
+  }
+}
+
+@media(max-width:400px){
+  .head-box h1{
+    font-size: 40px;
+  }
+  .head-box p{
+    font-size: 25px;
+  }
+}
+.burger-button{
+  display: none;
+}
+
+
+.burger-menu{
+  display: none;
+}
+
+@media(max-width:768px){
+  .nav-bar{
+    display: none;
+  }
+  .burger-menu {
+    /* display: none !important; */
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background-color: black;
+    z-index: 999;
+    width: 50%;
+  }
+  .burger-menu ul{
+    display: block;
+  }
+  .burger-menu ul li{
+    margin: 20px;
+    color: white;
+  }
+
+  .burger-button{
+    display: block;
+    background-color: unset;
+    border: none;
+    height: 40px;
+    color: white !important;
+  }
+  .nav-box .burger-button{
+    color: black;
+  }
+  .burger-menu .burger-button{
+    color: white;
+    margin: 10px auto 0px 30px;
+  }
+}
+
+/* section 2 */
+
+.section-2{
+  background-image: url('../img/young-plants-growing-very-large-plant-commercial-greenhouse.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  position: relative;
+  padding: 40px 0px;
+  height: 90vh;
+}
+
+.section-2::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: black;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.section-2 > div{
+  position: relative;
+  z-index: 10;
+}
+
+.solution{
+  padding: 60px 40px;
+}
+
+.solution > div{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+
+.solution h2{
+  width: 25%;
+  position: relative;
+  font-size: 30px;
+  color: white;
+}
+
+@media(max-width:768px){
+  .solution h2{
+    width: auto;
+    position: relative;
+    font-size: 20px;
+  }
+}
+
+@media(max-width:545px){
+  .solution > div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .solution h2{
+    position: relative;
+    font-size: 20px;
+    margin: auto;
+  }
+}
+
+.solution h2::before  {
+  content: "";
+  border: 10px solid #88CE53;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #88CE53;
+}
+
+.solution ul{
+  margin-top: 130px;
+}
+
+.solution ul li{
+  font-size: 25px;
+  color: white;
+}
+
+@media(max-width:510px){
+  .solution ul li{
+    font-size: 20px;
+    color: white;
+  }
+}
+
+.solution ul li::marker{
+  color: #88CE53;
+  font-size: 40px;
+}
+
+/* section 3 */
+
+.our-solution{
+  display: flex;
+  justify-content: flex-start ;
+  padding: 100px 30px;
+}
+
+@media(max-width:768px){
+  .our-solution{
+    justify-content: center;
+    padding: 60px  30px 20px 30px;
+  }
+}
+
+
+
+.our-solution h3{
+  position: relative;
+  margin: 30px;
+  font-size: 35px;
+}
+
+@media(max-width:500px){
+  .our-solution h3{
+    font-size: 25px;
+  }
+  .our-solution{
+    padding: 30px 0px;
+  }
+}
+
+.our-solution h3::before  {
+  content: "";
+  border: 10px solid #88CE53;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #88CE53;
+}
+
+.section-3 .right-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.section-3 .right-box img{
+  width: 100%;
+  height: auto;
+}
+
+.section-3 .left-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+
+.section-3 .left-box img{
+  width: 100%;
+  height: auto;
+}
+
+.section-3 .right-box p{
+  padding-top: 20px;
+}
+
+.section-3 .left-box p{
+  padding-top: 20px;
+}
+
+/* section 4 */
+
+.section-4 .right-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px 40px;
+  text-align: center;
+}
+@media(max-width:768px){
+  .section-4 .right-box{
+    padding: 40px 40px;
+  }
+}
+
+
+
+.section-4 .right-box p{
+  font-size: 20px;
+}
+
+.section-4 .right-box img{
+  width: 100%;
+  height: auto;
+}
+
+.our-solution h4{
+  position: relative;
+  margin: 30px;
+  font-size: 35px;
+}
+
+@media(max-width:500px){
+  .our-solution h4{
+    font-size: 25px;
+  }
+}
+
+.our-solution h4::before  {
+  content: "";
+  border: 10px solid #55CBF9;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #55CBF9;
+}
+/* section 5 */
+
+
+.section-5-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+@media(max-width:768px){
+  .section-5-div{
+    text-align: center;
+  }
+}
+
+
+.section-5-div img{
+  width: 100%;
+  height: auto;
+}
+.section-5-text p{
+  width: 60%;
+  font-size: 20px;
+}
+
+/* section 6 */
+.advance-box{
+  margin: 30px auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.team-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 30px;
+  margin: 40px auto;
+}
+
+/* form */
+
+.section-8 form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  border-radius: 20px;
+  border: 2px dashed #78ffff;
+  margin: 20px auto;
+  padding: 20px 0px;
+}
+
+.section-8 form label{
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 10px;
+}
+
+
+.section-8 form label input{
+  margin-right: 10px;
+  width: 80%;
+  height: 40px;
+  outline:0 !important;
+  border: 1px solid solid rgb(119, 113, 113);
+  border-radius: 10px;
+  padding-left: 5px;
+  /* border-bottom: 2px solid rgb(119, 113, 113); */
+}
+
+.section-8 form label textarea{
+  height: 150px;
+  width: 80%;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.form-div  button{
+  padding: 5px 14px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #78ffff;
+  color: white;
+}
+
+.form-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.last-div{
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 20px 0px ; 
+}
