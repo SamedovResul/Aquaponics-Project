@@ -118,7 +118,7 @@ submit.addEventListener('click', function(){
   if(re.test(email.value)){
     if( Name.value && surname.value && phone.value){
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://aquaphonics-main-wvoglgccwejru.herokuapp.com/send");
+    xhttp.open("POST", "https://infinite-castle-76696.herokuapp.com/send");
     xhttp.setRequestHeader("Content-type", 'application/json');
     xhttp.send(JSON.stringify(data));
     alert('Sizinlə əlaqə saxlanılacaq')
