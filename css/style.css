@@ -34,7 +34,13 @@
   align-items: center;
 }
 .nav-logo{
-  padding: 20px;
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+}
+
+.nav-logo img{
+  width: 50px;
 }
 
 .nav-bar {
@@ -72,13 +78,12 @@
   height: 0px;
   overflow: hidden;
   top: -0.5%;
-  background-color: black;
 }
 
 
 .top-nav 
 .nav-bar ul li{
-  color: white;
+  color: black;
 }
 .top-nav 
 .nav-logo{
@@ -165,7 +170,7 @@
     background-color: unset;
     border: none;
     height: 40px;
-    color: white !important;
+    color: black;
   }
   .nav-box .burger-button{
     color: black;
