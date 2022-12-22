@@ -1,6 +1,3 @@
-
-/* section 1 */
-
 .head-warpper{
   background-image: url('../img/vegetable-rows-pepper-grow-field-farming-agriculture_72572-4.webp');
   background-position: center;
@@ -340,21 +337,22 @@
 }
 
 .section-3 .right-box img{
-  width: 90%;
+  width: 100%;
   height: auto;
 }
 
 .section-3 .left-box{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  height: 100%;
   padding-bottom: 30px;
 }
 
 
 .section-3 .left-box img{
-  width: 70%;
+  width: 100%;
   height: auto;
 }
 
