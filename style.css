@@ -33,6 +33,7 @@
   --secondary-50: #e7f6e9;
   --neutrals-900: #1e1e1e;
   --neutrals-800: #3f3f3f;
+ 
 }
 html {
   font-size: 62.5%;
@@ -503,17 +504,18 @@ textarea::placeholder {
 .contact-icon span {
   display: inline-block;
   color: white;
-  -webkit-text-fill-color: white;
+  -webkit-text-fill-color:white;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
+  color: yellow;
 }
 .mobile-numb {
   display: flex;
   flex-direction: column;
 }
-.mobile-numb span {
-  -webkit-text-fill-color: white;
+.mobile-numb span{
+  -webkit-text-fill-color:white;
 }
 .footer-service {
   display: flex;
@@ -545,46 +547,46 @@ textarea::placeholder {
   html {
     font-size: 55%;
   }
-  .main-content h1 {
+  .main-content h1{
     font-size: 50px;
   }
-  .mobile-service .mobile-content h3 {
+  .mobile-service .mobile-content h3{
     font-size: 30px;
   }
-  .mobile-content p {
+  .mobile-content p{
     font-size: 16px;
   }
-  .mobile-img img {
+  .mobile-img img{
     width: 530px;
     height: 262px;
   }
-  .about .about-img img {
+  .about .about-img img{
     width: 510px;
     height: 420px;
   }
-  .contact-icon span {
+  .contact-icon span{
     font-size: 16px;
   }
-  .footer-service {
+  .footer-service{
     width: 70%;
   }
-  .footer-service span {
+  .footer-service span{
     font-size: 16px;
   }
-  .footer-up {
+  .footer-up{
     width: 90%;
     /* justify-content: space-evenly; */
   }
-  .up-section {
+  .up-section{
     height: 300px;
   }
-  .input-box input {
+  .input-box input{
     width: 300px;
   }
-  .checkbox {
+  .checkbox{
     flex-direction: column;
   }
-  label {
+ label{
     width: 100%;
     margin-top: 10px;
   }
@@ -602,21 +604,21 @@ textarea::placeholder {
   .contact {
     min-height: auto;
   }
-  .up-section {
+  .up-section{
     flex-direction: column-reverse;
     height: 450px;
     justify-content: center;
   }
-  .contact-us {
+  .contact-us{
     margin: 16px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .message {
+  .message{
     width: 100%;
   }
-  .message textarea {
+  .message textarea{
     width: 100%;
   }
 }
@@ -672,6 +674,7 @@ textarea::placeholder {
   .main-content {
     background-color: #f2f2f2;
     margin: 0;
+
   }
   .main-content .container {
     display: flex;
@@ -808,10 +811,11 @@ textarea::placeholder {
     width: 100%;
   }
 
+  
   .contact-us h3 {
     font-size: 20px;
   }
-  .contact-us {
+  .contact-us{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -830,7 +834,7 @@ textarea::placeholder {
     border: none;
     font-size: 12px;
   }
-  .message {
+  .message{
     margin: 0;
   }
   /* .message textarea {
