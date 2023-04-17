@@ -23,9 +23,33 @@ document.addEventListener("scroll", () => {
   header.classList.toggle("sticky", window.scrollY > 80);
 });
 
-const handleSubmit = (e) => {
+// send email
+
+const form = document.querySelector(".form");
+form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const fullName = document.querySelector(".name").value;
+  const email = document.querySelector(".email").value;
+  const message = document.querySelector(".text-message").value;
+  const radioInputs = document.querySelectorAll('input[name="size"]');
+  const type = radioInputs[0].checked
+    ? radioInputs[0].value
+    : radioInputs[1].value;
 
-};
-
-// form.addEventListener("submit", handleSubmit);
+  if (email) {
+    fetch("https://azirrigationserver.azurewebsites.net/contact/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        fullName: fullName,
+        email: email,
+        message: message,
+        type: type,
+      }),
+    })
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+  }
+});
