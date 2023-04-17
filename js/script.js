@@ -2,11 +2,11 @@ const menuIcon = document.getElementById("menu-icon");
 const navbar = document.getElementsByClassName("navbar")[0];
 const nav = document.querySelectorAll("nav a");
 const header = document.getElementsByClassName("header")[0];
-const form = document.querySelectorAll("form")[0];
+// const form = document.querySelectorAll("form")[0];
 
-for (let i = 0; i < form.length; i++) {
-  form[i].addEventListener("change", (e) => console.log(e.target.value));
-}
+// for (let i = 0; i < form.length; i++) {
+//   form[i].addEventListener("change", (e) => console.log(e.target.value));
+// }
 
 for (let i = 0; i < nav.length; i++) {
   nav[i].addEventListener("click", () => {
@@ -28,4 +28,4 @@ const handleSubmit = (e) => {
 
 };
 
-form.addEventListener("submit", handleSubmit);
+// form.addEventListener("submit", handleSubmit);
