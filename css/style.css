@@ -33,7 +33,6 @@
   --secondary-50: #e7f6e9;
   --neutrals-900: #1e1e1e;
   --neutrals-800: #3f3f3f;
- 
 }
 html {
   font-size: 62.5%;
@@ -69,7 +68,7 @@ body {
   font-weight: 600;
   cursor: default;
 }
-.logo img{
+.logo img {
   cursor: pointer;
 }
 
@@ -187,23 +186,21 @@ section {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  /* min-height: 100vh; */
 }
 .service-card {
   background-color: white;
-  height: 502px;
+  height: 100%;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
 }
-.service-img{
+.service-img {
   height: 300px;
- 
 }
-.service-img img{
-  height: 95%;
+.service-img img {
+  height: 90%;
   width: 100%;
-  border-radius: 24px 24px 0 0 ;
+  border-radius: 24px 24px 0 0;
 }
 .service-card .service-content {
   display: flex;
@@ -212,7 +209,7 @@ section {
   align-items: center;
   text-align: center;
   height: 40%;
-  padding: 0 36px;
+  padding: 40px 36px;
 }
 .service-content h3 {
   font-weight: 500;
@@ -260,7 +257,6 @@ section {
   align-items: center;
   justify-content: space-between;
   margin-top: 216px;
-  /* flex-wrap: wrap; */
 }
 .mobile-service .mobile-content h3 {
   font-weight: 500;
@@ -278,11 +274,11 @@ section {
   width: 626px;
   height: 292px;
 }
-.video-content{
+.video-content {
   width: 100%;
   margin: 88px 0;
 }
-.video-content video{
+.video-content video {
   width: 100%;
   height: 100%;
 }
@@ -291,8 +287,6 @@ section {
 
 .about {
   display: flex;
-  /* justify-content: center; */
-  /* flex-wrap: wrap; */
   align-items: center;
   gap: 2rem;
 }
@@ -330,13 +324,12 @@ section {
 .last-section .last-up {
   display: flex;
   justify-content: center;
-  /* margin-top: 40px; */
 }
 .up-section {
   width: 90%;
   display: flex;
   margin-top: 40px;
-  height: 250px;
+  height: 280px;
   border-bottom: 1px solid white;
 }
 .form {
@@ -346,10 +339,11 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  width: 90%;
 }
 
 .input-box input {
-  width: 375px;
+  width: 100%;
   padding: 16px 24px;
   background-color: rgba(255, 255, 255, 0.17);
   color: #ffffff;
@@ -371,53 +365,79 @@ textarea:hover {
 }
 .checkbox {
   display: flex;
-  /* width: 35px; */
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+  width: 90%;
 }
 input[type="radio"] {
   display: none;
 }
-label {
+.radio-item{
+  width: 48%;
+}
+.radio-item label {
+  display: flex;
+  padding: 10px 60px;
+  border: 2px solid white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  min-width: 180px;
+  white-space: nowrap;
   position: relative;
   color: white;
-  font-size: 16px;
-  border: 2px solid white;
-  border-radius: 8px;
-  padding: 10px 0;
-  display: flex;
-  width: 180px;
-  align-items: center;
-  cursor: pointer;
-  font-weight: 400;
-  line-height: 24px;
 }
-label:before {
+.radio-item label:after,
+.radio-item label:before {
   content: "";
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+}
+
+.radio-item label:after {
+  height: 20px;
+  width: 20px;
+  border: 2px solid white;
+  left: 20px;
+  top: calc(50% - 12px);
+}
+.radio-item label:before {
+  background: var(--secondary-500);
   height: 10px;
   width: 10px;
-  border: 3px solid white;
-  border-radius: 50%;
-  margin: 0 20px;
+  left: 27px;
+  top: calc(50% - 5px);
+  transform: scale(5);
+  transition: 0.3s ease-in-out 0s;
+  opacity: 0;
+  visibility: hidden;
 }
-input[type="radio"]:checked + label {
+.radio-item [type="radio"]:checked + label {
+  border-color: var(--secondary-500);
   color: var(--secondary-500);
+}
+.radio-item [type="radio"]:checked + label:after {
   border: 2px solid var(--secondary-500);
 }
-input[type="radio"]:checked + label:before {
-  border: 4px solid var(--secondary-500);
+
+.radio-item [type="radio"]:checked + label:before {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
 }
+
 .message {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
 }
 .message textarea {
   background-color: rgba(255, 255, 255, 0.17);
   color: #ffffff;
   width: 320px;
-  height: 105px;
+  height: 115px;
   border-radius: 8px;
   padding: 16px 28px;
 }
@@ -430,6 +450,13 @@ textarea::placeholder {
   border-radius: 8px;
   color: white;
   margin: 16px 0 25px 0;
+  cursor: pointer;
+}
+.message button:hover {
+  background-color: var(--secondary-600);
+}
+.message button:active {
+  background-color: var(--secondary-700);
 }
 .contact-us {
   margin-left: 16px;
@@ -447,28 +474,25 @@ textarea::placeholder {
   color: white;
 }
 .down-section {
-  margin-top: 20px;
+  margin-top: 56px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .footer-up {
   display: flex;
   width: 90%;
   justify-content: space-between;
 }
-.footer-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .footer-services {
-  width: 60%;
+  width:70%;
   display: flex;
   justify-content: space-between;
 }
 
-.social-media {
-  display: flex;
-  flex-direction: column;
-}
 
 .footer-icon a {
   display: inline-flex;
@@ -492,9 +516,6 @@ textarea::placeholder {
   font-size: 16px;
   line-height: 24px;
 }
-.contact-icons {
-  height: 180px;
-}
 .contact-icon {
   display: flex;
   align-items: center;
@@ -507,27 +528,27 @@ textarea::placeholder {
 }
 .contact-icon img {
   margin-right: 8px;
+  display: flex;
 }
 .contact-icon span {
   display: inline-block;
   color: white;
-  -webkit-text-fill-color:white;
+  -webkit-text-fill-color: white;
   font-size: 18px;
   font-weight: 300;
   line-height: 27px;
-  color: yellow;
 }
 .mobile-numb {
   display: flex;
   flex-direction: column;
 }
-.mobile-numb span{
-  -webkit-text-fill-color:white;
+.mobile-numb span {
+  -webkit-text-fill-color: white;
 }
 .footer-service {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  /* width: 300px; */
 }
 .footer-service h6 {
   color: white;
@@ -536,65 +557,71 @@ textarea::placeholder {
   font-size: 18px;
   line-height: 18px;
 }
-.footer-service span {
+.footer-service a {
   color: white;
   margin: 0 0 22px 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.footer-service a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+.footer-service a:hover:after {
+  width: 100%;
 }
 .footer-down {
   display: flex;
   justify-content: center;
 }
 .footer-icons {
-  width: 80%;
+  width: 90%;
 }
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
   }
-  .main-content h1{
+  .main-content h1 {
     font-size: 50px;
   }
-  .mobile-service .mobile-content h3{
-    font-size: 30px;
+  .mobile-service .mobile-content h3 {
+    font-size: 28px;
   }
-  .mobile-content p{
+  .mobile-content p {
     font-size: 16px;
   }
-  .mobile-img img{
+  .mobile-img img {
     width: 530px;
     height: 262px;
   }
-  .about .about-img img{
+  .about .about-img img {
     width: 510px;
-    height: 420px;
   }
-  .contact-icon span{
+  .contact-icon span {
     font-size: 16px;
   }
-  .footer-service{
-    width: 70%;
+  .service-card h3 {
+    font-size: 25px;
   }
-  .footer-service span{
-    font-size: 16px;
-  }
-  .footer-up{
-    width: 90%;
-    /* justify-content: space-evenly; */
-  }
-  .up-section{
+  .up-section {
     height: 300px;
   }
-  .input-box input{
-    width: 300px;
-  }
-  .checkbox{
+  .checkbox {
     flex-direction: column;
   }
- label{
+  .radio-item{
     width: 100%;
+
+  }
+  .radio-item label{
     margin-top: 10px;
   }
 }
@@ -611,21 +638,21 @@ textarea::placeholder {
   .contact {
     min-height: auto;
   }
-  .up-section{
+  .up-section {
     flex-direction: column-reverse;
     height: 450px;
     justify-content: center;
   }
-  .contact-us{
+  .contact-us {
     margin: 16px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .message{
+  .message {
     width: 100%;
   }
-  .message textarea{
+  .message textarea {
     width: 100%;
   }
 }
@@ -663,12 +690,9 @@ textarea::placeholder {
     background-color: white;
     border-radius: 0 0 12px 12px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    /* transition: all linear .5s; */
   }
   .checkbox {
-    width: 340px;
     flex-direction: row;
-    justify-content: center;
     margin: 20px 0;
   }
   .navbar a {
@@ -681,7 +705,6 @@ textarea::placeholder {
   .main-content {
     background-color: #f2f2f2;
     margin: 0;
-
   }
   .main-content .container {
     display: flex;
@@ -712,7 +735,7 @@ textarea::placeholder {
   .service-cards {
     flex-direction: column;
   }
-  .service-card{
+  .service-card {
     width: 60%;
   }
   .service-text {
@@ -796,7 +819,6 @@ textarea::placeholder {
 
   .up-section {
     flex-direction: column-reverse;
-    /* align-items: center; */
     text-align: center;
     height: 530px;
   }
@@ -813,11 +835,10 @@ textarea::placeholder {
     width: 100%;
   }
 
-  
   .contact-us h3 {
     font-size: 20px;
   }
-  .contact-us{
+  .contact-us {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -828,23 +849,18 @@ textarea::placeholder {
     width: 300px;
     margin: 12px 0;
   }
-  input[type="radio"]:checked + label {
+  .radio-item[type="radio"]:checked + label {
     color: var(--secondary-500);
     border: none;
   }
-  label {
+  .radio-item label {
     border: none;
     font-size: 12px;
-  }
-  .message{
     margin: 0;
   }
-  /* .message textarea {
-    width: 340px;
+  .message {
+    margin: 0;
   }
-  .message button {
-    width: 340px;
-  } */
 
   .footer-services {
     flex-direction: column-reverse;
@@ -858,7 +874,7 @@ textarea::placeholder {
   .footer-up .img img {
     width: 150px;
   }
-  .footer-service span {
+  .footer-service a {
     font-size: 16px;
   }
   .contact-icon {
@@ -879,7 +895,6 @@ textarea::placeholder {
     margin: 0;
   }
 }
-
 
 @media (max-width: 450px) {
   html {
