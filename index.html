@@ -57,7 +57,7 @@
       <div class="service-cards">
         <div class="service-card">
           <div class="service-img">
-            <img src="./assets/IMG_3626.png" alt=""/>
+            <img src="./assets/IMG_3626.png" alt="" />
           </div>
           <div class="service-content">
             <h3>Yerüstü suvarma sistemi</h3>
@@ -130,12 +130,12 @@
           <img src="./assets/iPhone 12 Pro.png" alt="" />
         </div>
       </div>
-      <div class="video-content" >
-        <video  controls muted>
-          <source src="./assets/LK - Video.mp4" type="video/mp4"  />
+      <div class="video-content">
+        <video controls muted>
+          <source src="./assets/LK - Video.mp4" type="video/mp4" />
           <source src="./assets/LK - Video.mp4" type="video/ogg" />
         </video>
-        </div>
+      </div>
     </section>
     <section class="about" id="about">
       <div class="about-img">
@@ -160,8 +160,8 @@
             <form class="form">
               <div class="input">
                 <div class="input-box">
-                  <input type="text" placeholder="Ad Soyad" />
-                  <input type="email" placeholder="Email" />
+                  <input type="text" placeholder="Ad Soyad" class="name" />
+                  <input type="email" placeholder="Email" class="email" />
                 </div>
                 <div class="checkbox">
                   <input
@@ -170,6 +170,7 @@
                     value="Yeraltı sistem"
                     id="yeraltı"
                     checked="checked"
+                    class="down"
                   />
                   <label for="yeraltı">Yeraltı sistem </label>
                   <input
@@ -177,6 +178,7 @@
                     name="size"
                     value="Yerüstü sistem"
                     id="yerüstü"
+                    class="up"
                   />
                   <label for="yerüstü">Yerüstü sistem</label>
                 </div>
@@ -188,6 +190,7 @@
                   cols="30"
                   rows="10"
                   placeholder="Mesaj"
+                  class="text-message"
                 ></textarea>
                 <button type="submit">Göndər</button>
               </div>
