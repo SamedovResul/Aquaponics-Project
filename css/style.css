@@ -294,6 +294,7 @@ section {
   width: 632px;
   height: 451px;
   border-radius: 24px;
+  
 }
 .about-content {
   display: flex;
@@ -373,7 +374,7 @@ textarea:hover {
 input[type="radio"] {
   display: none;
 }
-.radio-item{
+.radio-item {
   width: 48%;
 }
 .radio-item label {
@@ -488,11 +489,10 @@ textarea::placeholder {
   justify-content: space-between;
 }
 .footer-services {
-  width:70%;
+  width: 70%;
   display: flex;
   justify-content: space-between;
 }
-
 
 .footer-icon a {
   display: inline-flex;
@@ -548,7 +548,6 @@ textarea::placeholder {
 .footer-service {
   display: flex;
   flex-direction: column;
-  /* width: 300px; */
 }
 .footer-service h6 {
   color: white;
@@ -617,11 +616,10 @@ textarea::placeholder {
   .checkbox {
     flex-direction: column;
   }
-  .radio-item{
+  .radio-item {
     width: 100%;
-
   }
-  .radio-item label{
+  .radio-item label {
     margin-top: 10px;
   }
 }
@@ -874,6 +872,7 @@ textarea::placeholder {
   }
   .footer-service a {
     font-size: 16px;
+    width: 220px;
   }
   .contact-icon {
     margin-top: 20px;
@@ -892,11 +891,20 @@ textarea::placeholder {
   .footer-icon a:nth-child(1) {
     margin: 0;
   }
-  .last-down{
+  .last-down {
     height: 600px;
-   }
+  }
 }
-
 @media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 
+  .last-up {
+    display: none;
+  }
+  .checkbox {
+    width: 100%;
+    flex-direction: column;
+  }
 }

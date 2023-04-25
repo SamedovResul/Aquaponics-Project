@@ -28,14 +28,17 @@ document.addEventListener("scroll", () => {
 const form = document.querySelector(".form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  const fullName = document.querySelector(".name").value;
-  const email = document.querySelector(".email").value;
-  const message = document.querySelector(".text-message").value;
+  let fullName = document.querySelector(".name");
+  let email = document.querySelector(".email");
+  let message = document.querySelector(".text-message");
   const radioInputs = document.querySelectorAll('input[name="size"]');
   const type = radioInputs[0].checked
     ? radioInputs[0].value
     : radioInputs[1].value;
 
+  if (!email) {
+    alert("Email daxil edin");
+  }
   if (email) {
     fetch("https://azirrigationserver.azurewebsites.net/contact/email", {
       method: "POST",
@@ -43,13 +46,25 @@ form.addEventListener("submit", (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        fullName: fullName,
-        email: email,
-        message: message,
+        fullName: fullName.value,
+        email: email.value,
+        message: message.value,
         type: type,
       }),
     })
-      .then((res) => console.log(res))
+      .then((res) =>{
+        console.log(fullName)
+        // document.querySelector(".name").value = ''
+        reset(fullName, email, message);
+      })
       .catch((err) => console.log(err));
   }
+ 
 });
+
+function reset(fullName, email, message) {
+  fullName.value = "";
+  email.value = "";
+  message.value = "";
+}
+
