@@ -36,6 +36,18 @@ form.addEventListener("submit", (e) => {
     ? radioInputs[0].value
     : radioInputs[1].value;
 
+  function sendMail() {
+    let params = {
+      fullName: fullName.value,
+      email: email.value,
+      message: message.value,
+      type: type,
+    };
+    emailjs.send("service_4hrt4z1", "template_7nmtapv", params)
+    .then(res=>console.log(res))
+    .catch(err=>console.log(err))
+  }
+
   if (!email) {
     alert("Email daxil edin");
   }
@@ -52,14 +64,14 @@ form.addEventListener("submit", (e) => {
         type: type,
       }),
     })
-      .then((res) =>{
-        console.log(fullName)
+      .then((res) => {
+        console.log(fullName);
+        sendMail();
         // document.querySelector(".name").value = ''
         reset(fullName, email, message);
       })
       .catch((err) => console.log(err));
   }
- 
 });
 
 function reset(fullName, email, message) {
@@ -67,4 +79,3 @@ function reset(fullName, email, message) {
   email.value = "";
   message.value = "";
 }
-
