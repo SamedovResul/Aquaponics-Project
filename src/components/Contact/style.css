@@ -1,0 +1,8 @@
+/* .contact-page {
+} */
+
+.contact-page .contact-container {
+  background-color: var(--primary-900);
+  padding: 20px;
+  border-radius: 24px;
+}

@@ -1,0 +1,142 @@
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.container{
+  width: 100%;
+}
+.header.head {
+  background-color: white;
+}
+.sticky {
+  background-color: white;
+}
+
+.logo {
+  display: flex;
+}
+.logo img {
+  cursor: pointer;
+}
+
+.navbar a {
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 24px; */
+  margin-left: 20px;
+  /* margin-left: 64px; */
+  color: var(--neutrals-900);
+  transition: 0.5s ease;
+  display: inline-block;
+}
+.navbar a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+.navbar a:hover:after {
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
+}
+
+#menu-icon {
+  display: none;
+  font-size: 30px;
+  color: #292d32;
+  cursor: pointer;
+}
+
+.btn.mobile {
+  display: none;
+}
+
+.header .btn {
+  color: white;
+  background-color: var(--primary-600);
+  padding: 12px 28px;
+  border-radius: 12px;
+  cursor: pointer;
+  /* gap: 10; */
+  width: 147px;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  /* line-height: 24px; */
+}
+.header .btn a {
+  color: white;
+}
+.header .btn:hover {
+  background-color: var(--primary-700);
+}
+.header .btn:focus {
+  background-color: var(--primary-800);
+}
+
+@media (max-width: 768px) {
+  #menu-icon {
+    display: block;
+  }
+  .logo img {
+    width: 183px;
+    height: 32px;
+  }
+  .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    width: 100%;
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .btn.mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 12px;
+    border-radius: 8px;
+    width: auto;
+    height: 30px;
+  }
+
+  .btn.mobile a {
+    font-size: 14px;
+  }
+  .navbar.active {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 2rem 3%;
+    background-color: white;
+    border-radius: 0 0 12px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar a {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+  nav {
+    transition: all linear 1s;
+  }
+}

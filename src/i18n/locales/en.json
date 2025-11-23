@@ -1,0 +1,37 @@
+{
+  "download": "Download",
+  "services": "Services",
+  "about_us": "About us",
+  "spend_time": "Spend your time on more important things!",
+  "surface_irrigation_title": "Surface irrigation system",
+  "surface_irrigation_desc": "Water pipes are laid across the ground with a neat main line and secondary parallel lines branching off from it, covering all the trees.",
+
+  "underground_irrigation_title": "Underground irrigation system",
+  "underground_irrigation_desc": "Water pipes are laid underground with a neat main line and secondary parallel lines branching off from it, covering all the trees.",
+  "problem_title": "Problem",
+  "problem_desc": "There are problems like having to pay the gardener every month with additional expenses, or leaving work tired and watering the garden for hours.",
+
+  "solution_title": "AZIRRIGATION SOLUTION",
+  "solution_desc": "Water your entire garden with the push of a button from anywhere with your mobile device, and make sure all your trees are watered.",
+
+  "benefits_title": "Benefits",
+  "benefits_desc": "You are freed from additional gardener's expenses, from some trees not being watered, from wasting time spent watering the garden.",
+  "monitor_manage_title": "Monitor and manage irrigation with the mobile app",
+  "monitor_manage_desc": "Control the watering time of your garden and the amount of water used with your mobile phone.",
+  "about_azirrigation": "Azirrigation, an innovative domestically produced company, offers a solution to implement smart irrigation for crops and gardens without the human factor. Local products in the Azerbaijani market have helped many entrepreneurs become smart in their gardens and farms. A team of professional agronomists, engineers and programmers will offer you solutions consisting of the most modern technologies.",
+  "fullName": "Full name",
+  "email": "Email",
+  "message": "Message",
+  "surface": "Surface",
+  "underground": "Underground",
+  "surface_system": "Surface system",
+  "underground_system": "Underground system",
+  "send": "Send",
+  "contact_us": "Contact us",
+  "more_information": "Get more information about our services by contacting us you can.",
+  "underground_irrigation_systems":"Underground irrigation systems",
+  "surface_irrigation_systems":"Surface irrigation systems",
+  "copyright":"Copyright",
+  "address":"Khatai, Baku, Azerbaijan",
+  "street":"A. Mammmadbayova str. 57,"
+}

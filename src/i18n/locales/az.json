@@ -1,0 +1,37 @@
+{
+  "download": "Yüklə",
+  "services": "Xidmətlər",
+  "about_us": "Haqqımızda",
+  "spend_time": "Vaxtını daha vacib şeylərə sərf et!",
+  "surface_irrigation_title": "Yerüstü suvarma sistemi",
+  "surface_irrigation_desc": "Su boruları əsas xətt və ondan ayrılan paralel xətlər şəklində səliqəli şəkildə yer üzərində çəkilir və bütün ağacları əhatə edir.",
+
+  "underground_irrigation_title": "Yeraltı suvarma sistemi",
+  "underground_irrigation_desc": "Su boruları əsas xətt və ondan ayrılan paralel xətlər şəklində səliqəli şəkildə yer altında çəkilir və bütün ağacları əhatə edir.",
+  "problem_title": "Problem",
+  "problem_desc": "Hər ay bağban üçün əlavə xərclər ödəmək, işdən yorğun gəlib saatlarla bağ sulamaq kimi problemlər mövcuddur.",
+
+  "solution_title": "AZIRRIGATION HƏLLİ",
+  "solution_desc": "Bağınızın tamamını mobil cihazınız vasitəsilə haradan olursunuzsa olun, bir düyməyə basmaqla sulayın və bütün ağacların sulandığından əmin olun.",
+
+  "benefits_title": "Üstünlüklər",
+  "benefits_desc": "Əlavə bağban xərclərindən, bəzi ağacların sulanmamasından və bağ sulamağa sərf olunan vaxt itkisinə görə narahatlıqdan azad olursunuz.",
+  "monitor_manage_title": "Mobil tətbiq vasitəsilə suvarmaya nəzarət edin və idarə edin",
+  "monitor_manage_desc": "Bağınızın suvarma vaxtını və istifadə olunan suyun miqdarını mobil telefonunuzla idarə edin.",
+  "about_azirrigation": "Yerli və innovativ bir şirkət olan Azirrigation, bağ və əkin sahələri üçün insan amili olmadan ağıllı suvarma sisteminin tətbiqi üçün həllər təklif edir. Azərbaycan bazarındakı yerli məhsullar bir çox sahibkara öz bağ və fermalarını ağıllı şəkildə idarə etməyə kömək edib. Peşəkar aqronomlar, mühəndislər və proqramçılardan ibarət komanda sizə ən müasir texnologiyalardan ibarət həllər təqdim edəcək.",
+  "fullName": "Ad soyad",
+  "email": "Email",
+  "message": "Mesaj",
+  "surface": "Yer üstü",
+  "underground": "Yer altı",
+  "surface_system": "Yerüstü system",
+  "underground_system": "Yeraltı system",
+  "send":"Göndər",
+  "contact_us":"Bizimlə əlaqə",
+  "more_information":"Xidmətlərimiz haqqında daha ətraflı məlumat almaq üçün bizimlə əlaqə saxlaya bilərsiniz.",
+   "underground_irrigation_systems":"Yeraltı suvarma sistemləri",
+  "surface_irrigation_systems":"Yerüstü suvarma sistemləri",
+  "copyright":"Müəllif Hüquqları",
+  "address":"Xətai, Bakı, Azərbaycan",
+  "street":"A. Məmmədbəyova küç. 57"
+}

@@ -1,0 +1,161 @@
+.footer-section {
+  margin-top: 56px;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-up {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.footer-services {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 2rem;
+  color: black;
+  margin-left: 8px;
+  transition: 0.5s ease;
+}
+.footer-text {
+  margin-top: 40px;
+}
+.footer-text p {
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+}
+.contact-icon {
+  display: flex;
+  align-items: center;
+}
+.contact-icon:nth-child(2) {
+  margin-top: 24px;
+}
+.contact-icon:nth-child(3) {
+  margin-top: 24px;
+}
+.contact-icon img {
+  margin-right: 8px;
+  display: flex;
+}
+.contact-icon span {
+  display: inline-block;
+  color: white;
+  -webkit-text-fill-color: white;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.mobile-numb {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-numb span {
+  -webkit-text-fill-color: white;
+}
+.footer-service {
+  display: flex;
+  flex-direction: column;
+}
+.footer-service h6 {
+  color: white;
+  margin: 0 0 22px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+.footer-service a {
+  color: white;
+  margin: 0 0 22px 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  display: inline-block;
+  transition: 0.5s ease;
+}
+
+.footer-service a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+.footer-service a:hover:after {
+  width: 100%;
+}
+.footer-down {
+  display: flex;
+  justify-content: center;
+}
+.footer-icons {
+  width: 90%;
+}
+
+@media screen and (max-width: 800px) {
+  .last-down {
+    height: 600px;
+  }
+
+  .footer-container {
+    justify-content: start;
+  }
+
+  .footer-up {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .footer-up .img img {
+    width: 150px;
+  }
+
+  .footer-services {
+    flex-direction: column-reverse;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer-service a {
+    font-size: 16px;
+    width: 220px;
+  }
+
+  .contact-icon {
+    margin-top: 20px;
+  }
+  .contact-icon span {
+    font-size: 16px;
+  }
+
+  .contact-icon img {
+    width: 14px;
+    height: 20px;
+  }
+
+  .footer-icons {
+    position: relative;
+    top: 40px;
+  }
+
+  .footer-down {
+    justify-content: start;
+  }
+}
